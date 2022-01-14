@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2342C6CE27912309001BA9FB /* UIButton+HLEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 2342C6CD27912309001BA9FB /* UIButton+HLEdgeInsets.m */; };
 		234AAC61278E732100F1C6BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 234AAC60278E732100F1C6BC /* AppDelegate.m */; };
 		234AAC64278E732100F1C6BC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 234AAC63278E732100F1C6BC /* SceneDelegate.m */; };
 		234AAC67278E732100F1C6BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234AAC66278E732100F1C6BC /* ViewController.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2342C6CC27912309001BA9FB /* UIButton+HLEdgeInsets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+HLEdgeInsets.h"; sourceTree = "<group>"; };
+		2342C6CD27912309001BA9FB /* UIButton+HLEdgeInsets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+HLEdgeInsets.m"; sourceTree = "<group>"; };
 		234AAC5C278E732100F1C6BC /* APPdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APPdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		234AAC5F278E732100F1C6BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		234AAC60278E732100F1C6BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 				234AAC63278E732100F1C6BC /* SceneDelegate.m */,
 				234AAC65278E732100F1C6BC /* ViewController.h */,
 				234AAC66278E732100F1C6BC /* ViewController.m */,
+				2342C6CC27912309001BA9FB /* UIButton+HLEdgeInsets.h */,
+				2342C6CD27912309001BA9FB /* UIButton+HLEdgeInsets.m */,
 				234AAC68278E732100F1C6BC /* Main.storyboard */,
 				234AAC6B278E732A00F1C6BC /* Assets.xcassets */,
 				234AAC6D278E732A00F1C6BC /* LaunchScreen.storyboard */,
@@ -266,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2342C6CE27912309001BA9FB /* UIButton+HLEdgeInsets.m in Sources */,
 				234AAC67278E732100F1C6BC /* ViewController.m in Sources */,
 				234AAC61278E732100F1C6BC /* AppDelegate.m in Sources */,
 				234AAC72278E732A00F1C6BC /* main.m in Sources */,
@@ -444,6 +450,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K4SPR52D63;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = APPdemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -470,6 +477,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K4SPR52D63;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = APPdemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

@@ -6,9 +6,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+//ios nonnull 和nullable 的使用
+//https://www.cnblogs.com/alan12138/p/5620021.html
+NS_ASSUME_NONNULL_BEGIN
 @interface ViewController : UIViewController
 
 
-@end
 
+@end
+NS_ASSUME_NONNULL_END
