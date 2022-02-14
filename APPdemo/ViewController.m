@@ -9,22 +9,82 @@
 #import "UIButton+HLEdgeInsets.h"
 #import <Masonry.h>
 #import "UIView+HLDirectFrame.h"
+#import <CoreLocation/CoreLocation.h>
+#import <SJVideoPlayer/SJVideoPlayer.h>
 
 #define kDefaultTopViewHeight 44.0
 
-@interface ViewController ()
+@protocol testDelegate <NSObject>
+
+@property (nonatomic, copy) NSString *testName;
+
+@end
+
+@interface ViewController ()<CLLocationManagerDelegate,testDelegate>
 @property (nonatomic, strong) UIView *navBar;
 @property (nonatomic, strong) UILabel *label;
+@property (nonatomic, strong) CLLocationManager *loctaionManager;
+@property (nonatomic, strong) CLGeocoder *geoC;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+- (CLLocationManager *)loctaionManager {
+    if (!_loctaionManager) {
+        _loctaionManager = [CLLocationManager new];
+        _loctaionManager.delegate = self;
+        _loctaionManager.desiredAccuracy  = kCLLocationAccuracyBest;
+        [_loctaionManager requestAlwaysAuthorization];
+    }
+    return  _loctaionManager;
+}
+
+- (CLGeocoder *)geoC {
+    if (!_geoC) {
+        _geoC = [CLGeocoder new];
+    }
+    return  _geoC;
+}
+
+- (IBAction)getLocation:(id)sender {
     
-   
+    [self.loctaionManager startUpdatingLocation];
+}
+
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
+    if(locations.count == 0) return;
+    [self.geoC reverseGeocodeLocation:locations.lastObject completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+            if(error != nil) return;
+            CLPlacemark *placeM = [placemarks firstObject];
+            NSString *placeName = placeM.name;
+            NSString *latitude = @(placeM.location.coordinate.latitude).stringValue;
+            NSString *longitude = @(placeM.location.coordinate.longitude).stringValue;
+            NSLog(@"当前位置是在:%@------经度:%@------纬度:%@",placeName,longitude,latitude);
+    }];
     
-    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//子类方法调父类可以用supper,如果想在父类里面调子类呢?如何操作
+- (void)test{
+    NSLog(@"%s",__func__);
 }
 
 
@@ -141,8 +201,10 @@ static inline UIEdgeInsets hl_safeAreaInset(UIView *view) {
 - (void)add:(int)b {
     static int a = 0;
     a = a+b;
-    NSLog(@"a = %d",a);
+   // NSLog(@"a = %d",a);
 }
 
+
+@synthesize testName;
 
 @end

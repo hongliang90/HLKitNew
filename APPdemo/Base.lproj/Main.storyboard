@@ -25,6 +25,15 @@
                                     <segue destination="ebC-y8-wBa" kind="push" id="0GX-rr-hq6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snr-nf-nnq">
+                                <rect key="frame" x="152" y="183" width="110" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="获取当前位置"/>
+                                <connections>
+                                    <action selector="getLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AmV-f2-Hxd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -33,7 +42,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1957.9710144927537" y="137.94642857142856"/>
+            <point key="canvasLocation" x="2868.115942028986" y="137.94642857142856"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="iAa-4m-3Fj">
+            <objects>
+                <navigationController id="fGX-Pu-sy9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ju3-mD-sww"/>
+                    <navigationItem key="navigationItem" id="7lu-89-Sk5"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LXF-lb-WmZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="d1F-Fc-Ica" kind="relationship" relationship="rootViewController" id="hvL-GE-j3g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B8W-17-xjj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1279.7101449275362" y="933.48214285714278"/>
+        </scene>
+        <!--播放器控制器-->
+        <scene sceneID="qaK-UM-hJx">
+            <objects>
+                <viewController id="d1F-Fc-Ica" customClass="HLVideoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O7p-01-R0R">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="VfD-BM-XYB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="播放器控制器" id="BG3-du-6al"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rcu-VW-GC6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2475" y="942"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="FwR-hH-5US">
@@ -49,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PVU-PC-DXe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2896" y="123"/>
+            <point key="canvasLocation" x="3805.7971014492755" y="122.54464285714285"/>
         </scene>
         <!--菜单-->
         <scene sceneID="5NA-Jb-2QB">
@@ -68,20 +111,22 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zqt-rA-wba" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+            <point key="canvasLocation" x="1957.9710144927537" y="137.94642857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="pnf-r2-ZPr">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="9lE-E6-cSg" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Rsn-5s-KP3"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7Gc-Ok-03L">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="wQE-U9-dMA" kind="relationship" relationship="viewControllers" id="ah5-qh-lwN"/>
+                        <segue destination="wQE-U9-dMA" kind="relationship" relationship="viewControllers" id="fNe-kz-fW5"/>
+                        <segue destination="fGX-Pu-sy9" kind="relationship" relationship="viewControllers" id="3Ba-Fc-hHu"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="708-Fd-f78" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

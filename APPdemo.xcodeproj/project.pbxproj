@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		16AC8D8EE951F201D40C027A /* Pods_APPdemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DE2FD8FDBAF6D1050A8DA2 /* Pods_APPdemo.framework */; };
+		2328203827B9FB0E005B9FE8 /* HLVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2328203727B9FB0E005B9FE8 /* HLVideoViewController.m */; };
+		2328203B27BA246E005B9FE8 /* UIViewController+RotationControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2328203A27BA246E005B9FE8 /* UIViewController+RotationControl.m */; };
+		2328203E27BA250A005B9FE8 /* UITabBarController+RotationControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2328203D27BA250A005B9FE8 /* UITabBarController+RotationControl.m */; };
+		2328204427BA25C9005B9FE8 /* UINavigationController+RotationControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2328204327BA25C9005B9FE8 /* UINavigationController+RotationControl.m */; };
+		2328204727BA482E005B9FE8 /* SJPlaybackRecord+SJTestExtended.m in Sources */ = {isa = PBXBuildFile; fileRef = 2328204627BA482E005B9FE8 /* SJPlaybackRecord+SJTestExtended.m */; };
 		2342C6CE27912309001BA9FB /* UIButton+HLEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 2342C6CD27912309001BA9FB /* UIButton+HLEdgeInsets.m */; };
 		234AAC61278E732100F1C6BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 234AAC60278E732100F1C6BC /* AppDelegate.m */; };
 		234AAC64278E732100F1C6BC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 234AAC63278E732100F1C6BC /* SceneDelegate.m */; };
@@ -20,6 +25,8 @@
 		234AAC86278E732B00F1C6BC /* APPdemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 234AAC85278E732B00F1C6BC /* APPdemoUITests.m */; };
 		234AAC88278E732B00F1C6BC /* APPdemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 234AAC87278E732B00F1C6BC /* APPdemoUITestsLaunchTests.m */; };
 		2357C3A127968AEE00BBEF79 /* UIView+HLDirectFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2357C3A027968AEE00BBEF79 /* UIView+HLDirectFrame.m */; };
+		2367726C279BE607003B0C6E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2367726A279BE15D003B0C6E /* CoreLocation.framework */; };
+		238542572799308500D4A330 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 238542562799308500D4A330 /* BaseViewController.m */; };
 		60214A07557C760D79F7545C /* Pods_APPdemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CB7DE50731BB00081B7960 /* Pods_APPdemoTests.framework */; };
 		9B93B9C0A8163B23D7054878 /* Pods_APPdemo_APPdemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5DADFE37CDC964997CA578 /* Pods_APPdemo_APPdemoUITests.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +49,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2328203627B9FB0E005B9FE8 /* HLVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLVideoViewController.h; sourceTree = "<group>"; };
+		2328203727B9FB0E005B9FE8 /* HLVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLVideoViewController.m; sourceTree = "<group>"; };
+		2328203927BA246E005B9FE8 /* UIViewController+RotationControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RotationControl.h"; sourceTree = "<group>"; };
+		2328203A27BA246E005B9FE8 /* UIViewController+RotationControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RotationControl.m"; sourceTree = "<group>"; };
+		2328203C27BA250A005B9FE8 /* UITabBarController+RotationControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+RotationControl.h"; sourceTree = "<group>"; };
+		2328203D27BA250A005B9FE8 /* UITabBarController+RotationControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+RotationControl.m"; sourceTree = "<group>"; };
+		2328204227BA25C9005B9FE8 /* UINavigationController+RotationControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+RotationControl.h"; sourceTree = "<group>"; };
+		2328204327BA25C9005B9FE8 /* UINavigationController+RotationControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+RotationControl.m"; sourceTree = "<group>"; };
+		2328204527BA482E005B9FE8 /* SJPlaybackRecord+SJTestExtended.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SJPlaybackRecord+SJTestExtended.h"; sourceTree = "<group>"; };
+		2328204627BA482E005B9FE8 /* SJPlaybackRecord+SJTestExtended.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SJPlaybackRecord+SJTestExtended.m"; sourceTree = "<group>"; };
+		2328204827BA4BAC005B9FE8 /* APPdemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APPdemo.pch; sourceTree = "<group>"; };
+		23420C3C279D2700000D99C0 /* shanghai.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = shanghai.gpx; sourceTree = "<group>"; };
 		2342C6CC27912309001BA9FB /* UIButton+HLEdgeInsets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+HLEdgeInsets.h"; sourceTree = "<group>"; };
 		2342C6CD27912309001BA9FB /* UIButton+HLEdgeInsets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+HLEdgeInsets.m"; sourceTree = "<group>"; };
 		234AAC5C278E732100F1C6BC /* APPdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APPdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +82,9 @@
 		234AAC87278E732B00F1C6BC /* APPdemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APPdemoUITestsLaunchTests.m; sourceTree = "<group>"; };
 		2357C39F27968AEE00BBEF79 /* UIView+HLDirectFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+HLDirectFrame.h"; sourceTree = "<group>"; };
 		2357C3A027968AEE00BBEF79 /* UIView+HLDirectFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+HLDirectFrame.m"; sourceTree = "<group>"; };
+		2367726A279BE15D003B0C6E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		238542552799308500D4A330 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		238542562799308500D4A330 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		257B83DDEE3220937AC76DDB /* Pods-APPdemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APPdemoTests.release.xcconfig"; path = "Target Support Files/Pods-APPdemoTests/Pods-APPdemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		38CB7DE50731BB00081B7960 /* Pods_APPdemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APPdemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51D2A74E67792FE0F56E9FBB /* Pods-APPdemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APPdemoTests.debug.xcconfig"; path = "Target Support Files/Pods-APPdemoTests/Pods-APPdemoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2367726C279BE607003B0C6E /* CoreLocation.framework in Frameworks */,
 				16AC8D8EE951F201D40C027A /* Pods_APPdemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +156,7 @@
 				234AAC63278E732100F1C6BC /* SceneDelegate.m */,
 				234AAC65278E732100F1C6BC /* ViewController.h */,
 				234AAC66278E732100F1C6BC /* ViewController.m */,
+				23420C3C279D2700000D99C0 /* shanghai.gpx */,
 				2342C6CC27912309001BA9FB /* UIButton+HLEdgeInsets.h */,
 				2342C6CD27912309001BA9FB /* UIButton+HLEdgeInsets.m */,
 				234AAC68278E732100F1C6BC /* Main.storyboard */,
@@ -142,6 +166,19 @@
 				234AAC71278E732A00F1C6BC /* main.m */,
 				2357C39F27968AEE00BBEF79 /* UIView+HLDirectFrame.h */,
 				2357C3A027968AEE00BBEF79 /* UIView+HLDirectFrame.m */,
+				238542552799308500D4A330 /* BaseViewController.h */,
+				238542562799308500D4A330 /* BaseViewController.m */,
+				2328203627B9FB0E005B9FE8 /* HLVideoViewController.h */,
+				2328203727B9FB0E005B9FE8 /* HLVideoViewController.m */,
+				2328204827BA4BAC005B9FE8 /* APPdemo.pch */,
+				2328204527BA482E005B9FE8 /* SJPlaybackRecord+SJTestExtended.h */,
+				2328204627BA482E005B9FE8 /* SJPlaybackRecord+SJTestExtended.m */,
+				2328203927BA246E005B9FE8 /* UIViewController+RotationControl.h */,
+				2328203A27BA246E005B9FE8 /* UIViewController+RotationControl.m */,
+				2328203C27BA250A005B9FE8 /* UITabBarController+RotationControl.h */,
+				2328203D27BA250A005B9FE8 /* UITabBarController+RotationControl.m */,
+				2328204227BA25C9005B9FE8 /* UINavigationController+RotationControl.h */,
+				2328204327BA25C9005B9FE8 /* UINavigationController+RotationControl.m */,
 			);
 			path = APPdemo;
 			sourceTree = "<group>";
@@ -179,6 +216,7 @@
 		FAAAEADE70A09CAAF7637250 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2367726A279BE15D003B0C6E /* CoreLocation.framework */,
 				E0DE2FD8FDBAF6D1050A8DA2 /* Pods_APPdemo.framework */,
 				AB5DADFE37CDC964997CA578 /* Pods_APPdemo_APPdemoUITests.framework */,
 				38CB7DE50731BB00081B7960 /* Pods_APPdemoTests.framework */,
@@ -425,10 +463,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2342C6CE27912309001BA9FB /* UIButton+HLEdgeInsets.m in Sources */,
+				2328204427BA25C9005B9FE8 /* UINavigationController+RotationControl.m in Sources */,
 				234AAC67278E732100F1C6BC /* ViewController.m in Sources */,
 				234AAC61278E732100F1C6BC /* AppDelegate.m in Sources */,
+				2328204727BA482E005B9FE8 /* SJPlaybackRecord+SJTestExtended.m in Sources */,
+				2328203E27BA250A005B9FE8 /* UITabBarController+RotationControl.m in Sources */,
 				234AAC72278E732A00F1C6BC /* main.m in Sources */,
+				2328203B27BA246E005B9FE8 /* UIViewController+RotationControl.m in Sources */,
+				2328203827B9FB0E005B9FE8 /* HLVideoViewController.m in Sources */,
 				234AAC64278E732100F1C6BC /* SceneDelegate.m in Sources */,
+				238542572799308500D4A330 /* BaseViewController.m in Sources */,
 				2357C3A127968AEE00BBEF79 /* UIView+HLDirectFrame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,12 +650,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K4SPR52D63;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/APPdemo/APPdemo.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = APPdemo/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "需要通过定位获取附近的城市名称";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "需要通过定位获取附近城市机构的名称";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -635,12 +682,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K4SPR52D63;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/APPdemo/APPdemo.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = APPdemo/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "需要通过定位获取附近的城市名称";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "需要通过定位获取附近城市机构的名称";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
